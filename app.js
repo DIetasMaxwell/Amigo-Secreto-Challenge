@@ -7,11 +7,34 @@ let listaAmigos = [];
 //Esta función busca en el html el nombre del 
 function agregarAmigo () {
     let nombre = document.getElementById("nombreDelAmigo").value;
-    // Mirar en internet sobre cómo poner las condiciones de que no se introduzcan espacios y solo se ingrese un nombre (letras y sin espacios). 
-    //Push antes de acutalizar para evitar retrasos
-    listaAmigos.push(nombre);
-    actualizarListaDeAmigos();
-    document.getElementById("nombreDelAmigo").value = "";
+    //Identifica caracteres especiales (no usuales en nombres en Español).
+    let restricciónLetras = /^[A-Za-zñÑáéíóúÁÉÍÓÚ]+$/;
+    //Alimina los espacios en el nombre
+    if (nombre.trim() === "") 
+        {
+            //Mira sí contiene espacios el nombre
+            if (nombre=="") 
+                {
+                    alert("Por favor, ingrese un nombre (Texto Vacío).");
+                    return false;
+                }
+    } 
+    //Comprueba que no existan caracteres especiales en el nombre
+    else if (!restricciónLetras.test(nombre)) 
+        {
+            alert("Por favor, solamente ingrese nombre sin espacios, ni números."); 
+    } 
+    //Restricción de largo de nombre; Nombre largo en España con 38 caracteres sin espacios "GargantilladelLozoyayPinilladeBuitrago" 
+    else if ((nombre.length > 38)) {
+        alert("Solo se permite ingresar un nombre de máximo 38 letras sin espacios,")
+        return false;
+    }
+    else 
+        {
+            listaAmigos.push(nombre);
+            actualizarListaDeAmigos();
+            document.getElementById("nombreDelAmigo").value = "";
+    }
 
 }
 
@@ -34,6 +57,6 @@ function actualizarListaDeAmigos() {
     }
 }
 
-
+// Falta hacer el sorteo y mostrar el nombre de la persona seleccionada.
 
 
