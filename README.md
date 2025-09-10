@@ -4,12 +4,21 @@
      src="https://github.com/user-attachments/assets/9c963ed9-6fb2-48b0-a6b0-80871e87716a"
      style="margin-bottom:20px;" />
 
-Este es un pequeño proyecto que permite:
-1. Añadir los nombres de amigos en una lista.
-2. Mostrar la lista de amigos en pantalla.
-3. Sortear y seleccionar de manera **aleatoria** quién será el "amigo secreto".
+---
+
+## ⚙️ Cómo usarlo
+1. Ingresa los nombres en el campo de texto.
+2. Haz clic en **Agregar amigo** para añadirlos a la lista.
+3. Cuando tengas al menos 2 participante, presiona **Sortear amigo secreto**.
+4. El sistema mostrará aleatoriamente quién es el amigo secreto.
+
+---
 
 
+## 📜 Licencia
+Este proyecto es de uso libre para fines educativos.
+
+</div>
 
 ---
 
