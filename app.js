@@ -57,6 +57,24 @@ function actualizarListaDeAmigos() {
     }
 }
 
-// Falta hacer el sorteo y mostrar el nombre de la persona seleccionada.
 
+// Función para sortear un solo amigo
+// Función para sortear un solo amigo
+function sortearAmigo() {
+    // Restricción: para que haya mínimo dos nombres en la lista.
+    if (listaAmigos.length < 2) { 
+        alert("Se necesita mínimo dos nombres para poder realizar el sorteo.");
+        return; 
+    }
+    // Asigna un valor aleatorio a los nombres del array.
+    let indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
+    // Obtiene el nombre del amigo secreto usando el índice aleatorio.
+    let amigoSecreto = listaAmigos[indiceAleatorio];
+    // Busca en el HTML el nombre.
+    let resultado = document.getElementById('resultado');
+    //En caso de sortear de nuevo, borra el resultado anterior.
+    resultado.innerHTML = ""; 
+    // Muestra el nombre del amigo secreto
+    resultado.innerHTML = `<p>El amigo secreto es: ${amigoSecreto}</p>`;
+}
 
