@@ -6,7 +6,7 @@
 
 ---
 
-## ⚙️ Cómo usarlo
+## ⚙️ ¿Cómo usarlo?
 1. Ingresa los nombres en el campo de texto.
 2. Haz clic en **Agregar amigo** para añadirlos a la lista.
 3. Cuando tengas al menos 2 participante, presiona **Sortear amigo secreto**.
@@ -15,10 +15,16 @@
 ---
 
 
-## 📜 Licencia
-Este proyecto es de uso libre para fines educativos.
+## 🚧 Enlace del Proyecto Funcional
+[👉 Ir al Proyecto] (https://dietasmaxwell.github.io/Amigo-Secreto-Challenge/)
 
-</div>
+
+---
+
+
+## 📜 Licencia
+Este proyecto es de uso libre para fines educativos (Alura Latam / ONE-Oracle Next Education).
+
 
 ---
 
